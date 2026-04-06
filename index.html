@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Decision Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="cursor"></div>
+<div class="cursor-trail"></div>
+
+<div class="container">
+
+  <h1>Decision Helper</h1>
+  <p class="subtitle">Analyze your future with precision.</p>
+
+  <div class="card">
+
+    <h2>Your Options</h2>
+    <input id="option1" placeholder="Option 1">
+    <input id="option2" placeholder="Option 2">
+
+    <h2>Your Priorities (1–5)</h2>
+
+    <label>Passion</label>
+    <input id="passion" type="number" min="1" max="5">
+
+    <label>Stability</label>
+    <input id="stability" type="number" min="1" max="5">
+
+    <label>Money</label>
+    <input id="money" type="number" min="1" max="5">
+
+    <label>Risk Tolerance</label>
+    <input id="risk" type="number" min="1" max="5">
+
+    <button onclick="calculate()">Analyze Decision</button>
+
+    <div id="result" class="result-box"></div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
